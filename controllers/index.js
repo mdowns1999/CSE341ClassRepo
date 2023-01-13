@@ -1,19 +1,16 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-const displaySimpleName = (req, res, next) => {
-    res.json("Jami Downs!!");
-}
+// const displaySimpleName = async (req, res, next) => {
+//     res.json("Jami Downs!!");
+// }
 
 const getAllContacts = async (req, res, next) => {
     const result = await mongodb.getDb().db("contactInfo").collection("contacts").find();
     result.toArray().then((lists) => {
         res.status(200).json(lists);
     });
-
-
 }
-
 
   const getSingleContactByID = async (req, res, next) => {
       const userIdString = req.params.id;
@@ -29,4 +26,4 @@ const getAllContacts = async (req, res, next) => {
       });
     };
 
-module.exports = {getAllContacts, getSingleContactByID, displaySimpleName};
+module.exports = {getAllContacts, getSingleContactByID};
