@@ -7,7 +7,6 @@ app.use('/', require('./routes'))
 
 mongodb.initDb((err) => {
     if(err){
-        console.log("SOMETHING IS WRONG");
         console.log(err);
     } else {
         app.listen(port);
