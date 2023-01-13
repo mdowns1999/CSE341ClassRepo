@@ -1,7 +1,10 @@
 const routes = require('express').Router();
 
-routes.get('/', (req, res) => {
-   res.send('Jami Knight');
-})
+const controller = require('../controllers/index');
+
+routes.get('/', controller.displaySimpleName);
+routes.get('/contacts', controller.getAllContacts);
+
+routes.get('/singleContact/:id', controller.getSingleContactByID);
 
 module.exports = routes;
