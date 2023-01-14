@@ -8,6 +8,7 @@ const ObjectId = require('mongodb').ObjectId;
 const getAllContacts = async (req, res, next) => {
     const result = await mongodb.getDb().db("contactInfo").collection("contacts").find();
     result.toArray().then((lists) => {
+        res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists);
     });
 }
@@ -22,6 +23,7 @@ const getAllContacts = async (req, res, next) => {
   
         
       result.toArray().then((lists) => {
+        res.setHeader('Content-Type', 'application/json');
         res.status(200).json(lists);
       });
     };
