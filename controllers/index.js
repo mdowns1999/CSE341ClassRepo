@@ -1,9 +1,9 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-// const displaySimpleName = async (req, res, next) => {
-//     res.json("Jami Downs!!");
-// }
+const displaySimpleName = async (req, res, next) => {
+    res.json("Jami Downs!!");
+}
 
 const getAllContacts = async (req, res, next) => {
     const result = await mongodb.getDb().db("contactInfo").collection("contacts").find();
@@ -28,4 +28,4 @@ const getAllContacts = async (req, res, next) => {
       });
     };
 
-module.exports = {getAllContacts, getSingleContactByID};
+module.exports = {getAllContacts, getSingleContactByID, displaySimpleName};

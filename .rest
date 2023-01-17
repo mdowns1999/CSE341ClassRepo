@@ -1,6 +1,6 @@
 ###
 
-//GET http://localhost:8080/ HTTP/1.1
+GET http://localhost:8080/ HTTP/1.1
 
 ###
 
@@ -13,10 +13,10 @@ GET http://localhost:8080/singleContact/63bed30bd9967510b4064d0f HTTP/1.1
 ###
 GET https://mikedowns341.onrender.com HTTP/1.1
 
-###
-GET https://mikedowns341.onrender.com/63bed30bd9967510b4064d0f  HTTP/1.1
-
 
 ###
-
 GET https://mikedowns341.onrender.com/contacts  HTTP/1.1
+
+###
+GET https://mikedowns341.onrender.com/singleContact/63bed30bd9967510b4064d0f HTTP/1.1
+
