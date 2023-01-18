@@ -9,6 +9,37 @@ GET http://localhost:8080/contacts HTTP/1.1
 ###
 GET http://localhost:8080/singleContact/63bed30bd9967510b4064d0f HTTP/1.1
 
+###
+PUT http://localhost:8080/updateContact/63bed30bd9967510b4064d0f  HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jami",
+    "lastName": "Downs",
+    "email": "jamiKnight@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "10-02-2002"
+}
+
+###
+POST http://localhost:8080/contacts  HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jeff",
+    "lastName": "Downs",
+    "email": "jeffdowns@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "06-23-1976"
+}
+
+###
+DELETE http://localhost:8080/deleteContact/63c86ea27232a13b5e7141f5  HTTP/1.1
+
+
+
+
+
 
 ###
 GET https://mikedowns341.onrender.com HTTP/1.1
