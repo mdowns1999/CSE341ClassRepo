@@ -15,7 +15,7 @@ content-type: application/json
 
 {
     "firstName": "Jami",
-    "lastName": "Downs",
+    "lastName": "Knight",
     "email": "jamiKnight@gmail.com",
     "favoriteColor": "Green",
     "birthday": "10-02-2002"
@@ -26,19 +26,15 @@ POST http://localhost:8080/contacts  HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Jeff",
+    "firstName": "Haylee",
     "lastName": "Downs",
-    "email": "jeffdowns@gmail.com",
+    "email": "hayleedowns@gmail.com",
     "favoriteColor": "blue",
-    "birthday": "06-23-1976"
+    "birthday": "03-17-1993"
 }
 
 ###
-DELETE http://localhost:8080/deleteContact/63c86ea27232a13b5e7141f5  HTTP/1.1
-
-
-
-
+DELETE http://localhost:8080/deleteContact/63c96a582f2445ce10379df8  HTTP/1.1
 
 
 ###
@@ -51,3 +47,29 @@ GET https://mikedowns341.onrender.com/contacts  HTTP/1.1
 ###
 GET https://mikedowns341.onrender.com/singleContact/63bed30bd9967510b4064d0f HTTP/1.1
 
+###
+PUT https://mikedowns341.onrender.com/updateContact/63bed30bd9967510b4064d0f  HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jami",
+    "lastName": "Downs",
+    "email": "jamiKnight@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "10-02-2002"
+}
+
+###
+POST https://mikedowns341.onrender.com/contacts  HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jeff",
+    "lastName": "Downs",
+    "email": "jeffdowns@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "06-23-1976"
+}
+
+###
+DELETE https://mikedowns341.onrender.com/deleteContact/63c968858873b6519dc2a1e4 HTTP/1.1
