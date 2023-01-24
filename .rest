@@ -1,5 +1,5 @@
+//LOCALHOST LINKS
 ###
-
 GET http://localhost:8080/contacts/ HTTP/1.1
 
 ###
@@ -33,18 +33,19 @@ content-type: application/json
 DELETE http://localhost:8080/contacts/63cffd08ba9b66b8fe019e6c HTTP/1.1
 
 
+//RENDER LINKS
 ###
 GET https://mikedowns341.onrender.com HTTP/1.1
 
 
 ###
-GET https://mikedowns341.onrender.com/contacts  HTTP/1.1
+GET https://mikedowns341.onrender.com/contacts/  HTTP/1.1
 
 ###
-GET https://mikedowns341.onrender.com/singleContact/63bed30bd9967510b4064d0f HTTP/1.1
+GET https://mikedowns341.onrender.com/contacts/63bed30bd9967510b4064d0f  HTTP/1.1
 
 ###
-PUT https://mikedowns341.onrender.com/updateContact/63bed30bd9967510b4064d0f  HTTP/1.1
+PUT https://mikedowns341.onrender.com/contacts/63bed30bd9967510b4064d0f  HTTP/1.1
 content-type: application/json
 
 {
@@ -68,4 +69,4 @@ content-type: application/json
 }
 
 ###
-DELETE https://mikedowns341.onrender.com/deleteContact/63c968858873b6519dc2a1e4 HTTP/1.1
+DELETE https://mikedowns341.onrender.com/contacts/63bed30bd9967510b4064d0f  HTTP/1.1
