@@ -5,7 +5,7 @@
     "description": "A Simple Project that practices how to connect to a database, use documentation, and learn Node.  This API will pull from a list of contacts.",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "mikedowns341.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
