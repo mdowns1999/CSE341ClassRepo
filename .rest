@@ -1,23 +1,20 @@
 ###
 
-GET http://localhost:8080/ HTTP/1.1
+GET http://localhost:8080/contacts/ HTTP/1.1
 
 ###
-
-GET http://localhost:8080/contacts HTTP/1.1
-
-###
-GET http://localhost:8080/singleContact/63bed30bd9967510b4064d0f HTTP/1.1
+GET http://localhost:8080/contacts/63bed30bd9967510b4064d0f HTTP/1.1
 
 ###
-PUT http://localhost:8080/updateContact/63bed30bd9967510b4064d0f  HTTP/1.1
+PUT http://localhost:8080/contacts/63cfff940065960d5dd9679a  HTTP/1.1
 content-type: application/json
+
 {
     "firstName": "Jami",
-    "lastName": "Downs",
-    "email": "jamiKnight@gmail.com",
-    "favoriteColor": "Green",
-    "birthday": "10-02-2002"
+    "lastName": "Knight",
+    "email": "jami@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "10-17-2002"
 }
 
 ###
@@ -25,15 +22,15 @@ POST http://localhost:8080/contacts  HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Haylee",
-    "lastName": "Downs",
-    "email": "hayleedowns@gmail.com",
+    "firstName": "Jami",
+    "lastName": "Knight",
+    "email": "jami@gmail.com",
     "favoriteColor": "blue",
-    "birthday": "03-17-1993"
+    "birthday": "10-17-1993"
 }
 
 ###
-DELETE http://localhost:8080/deleteContact/63c98cb4c7449e48198cc3e8 HTTP/1.1
+DELETE http://localhost:8080/contacts/63cffd08ba9b66b8fe019e6c HTTP/1.1
 
 
 ###
