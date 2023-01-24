@@ -40,7 +40,7 @@ const insertContact = async (req, res) => {
   const result = await mongodb.getDb().db('contactInfo').collection('contacts').insertOne(contact);
 
   if (result.acknowledged) {
-    res.status(202).json('The contact was successfully inserted!');
+    res.status(202).json(result);
     console.log('The contact was successfully inserted!');
   } else {
     res.status(500).json('The insert has failed.');
