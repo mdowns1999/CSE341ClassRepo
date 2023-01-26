@@ -8,7 +8,7 @@
   "host": "mikedowns341.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http", "https"
   ],
   "paths": {
     "/api-docs": {
