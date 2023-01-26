@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
-    "description": "A Simple Project that practices how to connect to a database, use documentation, and learn Node.  This API will pull from a list of contacts.",
+    "description": "Contacts",
     "version": "1.0.0"
   },
   "host": "mikedowns341.onrender.com",
@@ -11,9 +11,16 @@
     "http"
   ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/contacts/": {
       "get": {
-        "description": "Get all the contacts",
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -25,7 +32,7 @@
         }
       },
       "post": {
-        "description": "Insert a new contact into the database",
+        "description": "",
         "parameters": [
           {
             "name": "body",
@@ -64,7 +71,7 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "Get a contact by ID",
+        "description": "",
         "produces": [
           "application/json"
         ],
@@ -83,7 +90,7 @@
         }
       },
       "put": {
-        "description": "Update a contact and return the ID",
+        "description": "",
         "parameters": [
           {
             "name": "id",
@@ -126,7 +133,7 @@
         }
       },
       "delete": {
-        "description": "Delete a Contact by ID",
+        "description": "",
         "parameters": [
           {
             "name": "id",
